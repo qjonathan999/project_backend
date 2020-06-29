@@ -1,0 +1,14 @@
+<h2>Listado de Recetas</h2>
+
+{{#each listado}}
+<div>
+    {{{nombre}}}
+    {{{ingredientes}}}
+    {{{instrucciones}}}
+    <a href="/editar/{{_id}}" class="btn btn-primary">Editar</a>
+    <a href="/borrar/{{_id}}" class="btn btn-danger">Borrar</a>
+</div>
+{{/each}}
+
+<a href="/agregar">Agregar</a>
+
